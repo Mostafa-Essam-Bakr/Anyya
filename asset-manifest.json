@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Anyya/static/css/main.cccd1e22.css",
+    "main.js": "/Anyya/static/js/main.bcf100be.js",
+    "static/js/453.980ffa4e.chunk.js": "/Anyya/static/js/453.980ffa4e.chunk.js",
+    "static/media/1st.jpg": "/Anyya/static/media/1st.28572df2f88e3611e949.jpg",
+    "static/media/cover.jpg": "/Anyya/static/media/cover.37c14d6f274664604b1c.jpg",
+    "index.html": "/Anyya/index.html",
+    "main.cccd1e22.css.map": "/Anyya/static/css/main.cccd1e22.css.map",
+    "main.bcf100be.js.map": "/Anyya/static/js/main.bcf100be.js.map",
+    "453.980ffa4e.chunk.js.map": "/Anyya/static/js/453.980ffa4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cccd1e22.css",
+    "static/js/main.bcf100be.js"
+  ]
+}
