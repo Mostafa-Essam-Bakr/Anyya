@@ -1,0 +1,263 @@
+.aiframe {
+  width: 45%;
+  height: 500px;
+  position: relative;
+  z-index: 3;
+  /* left: 380px; */
+  /* top: 100px; */
+  border-radius: 30px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.aiframe .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(255, 0, 0) !important;
+}
+.vvvv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -3;
+  filter: blur(5px);
+}
+.parentaichat {
+  display: flex;
+  position: relative;
+  left: 10px;
+  flex-direction: column;
+}
+.hai {
+  transition: 0.5s;
+  position: relative;
+  left: 30px;
+  font-family: "Carter One", system-ui;
+  color: #ffffff;
+  display: flex;
+  top: 20px;
+}
+.hai:hover {
+  left: 50px;
+  color: white;
+}
+.btnai {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #ef14ff, #2a0a55, #4878c0);
+  font-family: fantasy;
+  box-shadow: 3px 3px 3px grey;
+  font-size: xx-large;
+  transition: 0.5s;
+  position: relative;
+  z-index: 2;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  top: 10px;
+  text-decoration: none;
+}
+.btnai a {
+  text-decoration: none;
+  color: white;
+}
+
+.btnai:hover {
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, #4878c0, #4878c0, #4878c0);
+  right: 20px;
+}
+
+.pbtnai {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  /* right: 20px; */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pbtnai svg {
+  overflow: hidden;
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+  color: white;
+  animation: flash;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+  from {
+    color: white;
+  }
+  to {
+    color: #0014ff;
+  }
+}
+.hsai {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hsai h1,
+.hsai h3 {
+  position: relative;
+  color: #ffffff;
+  font-family: monospace;
+  cursor: pointer;
+  left: 0px;
+  transition: 0.5s;
+  font-size: xxx-large;
+}
+
+.hsai h1:hover,
+.hsai h3:hover {
+  left: 5px;
+  color: blue;
+}
+
+.hsai svg {
+  width: 200px;
+  height: 200px;
+}
+.facepart:after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  background-color: rgb(0, 255, 157);
+  margin-left: -50px;
+  top: -120px;
+  z-index: -1;
+  animation: eyes 4s infinite ease-in;
+}
+@keyframes eyes {
+  0% {
+    background-color: white;
+  }
+  90% {
+    background-color: white;
+  }
+  92.5% {
+    background-color: rgb(0, 0, 0);
+  }
+  95% {
+    background-color: white;
+  }
+  97.5% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    background-color: white;
+  }
+}
+.facepart {
+  position: relative;
+}
+.facepart:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(to right, red, red, black);
+  top: -70px;
+  z-index: -1;
+  margin-left: -50px;
+  animation-name: mouse;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes mouse {
+  from {
+    background-image: linear-gradient(to right, red, red, black);
+  }
+  to {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      red,
+      rgb(255, 0, 0)
+    );
+  }
+}
+.covers {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  position: absolute;
+  z-index: -1;
+}
+.parentbtn {
+  width: 100%;
+  height: 669px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn1 {
+  display: flex;
+  width: 300px;
+  text-decoration: none;
+  position: relative;
+  height: 75px;
+  font-size: xx-large;
+  border: 1px solid lime;
+  border-radius: 50px;
+  background-color: lime;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+  left: 0;
+}
+.btn1:hover {
+  background: none;
+  color: rgb(255, 255, 255);
+  left: 20px;
+}
+
+.sketchfab-embed-wrapper a {
+  margin-right: 16px;
+  flex: 0 0 32px;
+  z-index: 1;
+  color: red;
+  display: none;
+}
+.viewer .landing .watermark {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: none;
+}
+.MODEL {
+  width: 100%;
+  height: 500px;
+}
+.LOGO {
+  width: 250px;
+  height: 200px;
+}
+@media screen and (max-width: 1024px) {
+  .aiframe {
+    width: 90%;
+    height: 500px;
+    position: relative;
+    z-index: 3;
+    /* left: 380px; */
+    /* top: 100px; */
+    border-radius: 30px;
+  }
+}
