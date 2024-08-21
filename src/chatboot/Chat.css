@@ -1,11 +1,9 @@
 .aiframe {
-  width: 45%;
-  height: 500px;
-  position: relative;
-  z-index: 3;
-  /* left: 380px; */
-  /* top: 100px; */
-  border-radius: 30px;
+  width: 100%;
+  height: 94%;
+  position: fixed;
+  background-color: white;
+  bottom: 0px;
 }
 
 .py-3 {
@@ -13,11 +11,6 @@
   padding-bottom: 0.75rem;
 }
 
-.aiframe .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: rgb(255, 0, 0) !important;
-}
 .vvvv {
   width: 100%;
   height: 100%;
@@ -26,10 +19,40 @@
   filter: blur(5px);
 }
 .parentaichat {
-  display: flex;
-  position: relative;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  left: 1500px;
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  from {
+    left: 1500px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.parentaichat svg,
+.login svg {
+  position: absolute;
+  z-index: 5;
+  font-size: xxx-large;
+  color: #01001b;
+  cursor: pointer;
   left: 10px;
-  flex-direction: column;
+  transition: 0.5s;
+}
+
+.parentaichat svg:hover,
+.login svg:hover {
+  left: 0px;
+  color: #74a0f8;
 }
 .hai {
   transition: 0.5s;
@@ -202,7 +225,7 @@
 }
 .parentbtn {
   width: 100%;
-  height: 669px;
+  height: 0px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -214,11 +237,12 @@
   text-decoration: none;
   position: relative;
   height: 75px;
+  top: 500px;
   font-size: xx-large;
-  border: 1px solid lime;
+  border: 1px solid rgb(55, 0, 255);
   border-radius: 50px;
-  background-color: lime;
-  color: rgb(0, 0, 0);
+  background-color: rgb(0, 68, 255);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.3s;
   left: 0;
@@ -250,14 +274,140 @@
   width: 250px;
   height: 200px;
 }
-@media screen and (max-width: 1024px) {
-  .aiframe {
-    width: 90%;
-    height: 500px;
-    position: relative;
-    z-index: 3;
-    /* left: 380px; */
-    /* top: 100px; */
-    border-radius: 30px;
+.pstart {
+  animation-name: move;
+}
+.sub {
+  position: absolute;
+  text-decoration: none;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(127, 165, 243);
+  z-index: 10;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  border-radius: 10px 10px;
+}
+.login {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  from {
+    left: 1500px;
   }
+  to {
+    left: 0px;
+  }
+}
+.frm1 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #1c64f2;
+  border-radius: 10px 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 58px;
+  justify-content: center;
+}
+.frm1 input {
+  width: 87%;
+  height: 52px;
+  border-radius: 20px;
+  border: none;
+}
+.text-sm {
+  display: none;
+}
+
+.frm1 label {
+  font-size: x-large;
+  font-family: fantasy;
+  color: white;
+}
+
+.frm1 button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px 10px;
+  background-image: linear-gradient(to right, blue, rgb(142, 142, 236));
+  font-family: fantasy;
+  font-size: larger;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.COVER0 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+}
+.payment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: aliceblue;
+}
+.p-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  gap: 13px;
+  background: white;
+}
+
+.p-4 div {
+  display: flex;
+}
+.p-4 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.p-4 div input {
+  width: 94%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #c8d7e9;
+  color: white;
+}
+.p-4 div label {
+  font-size: xx-large;
+  font-family: unset;
+}
+.p-4 button {
+  width: 50%;
+  height: 30px;
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+.p-4 button a {
+  text-decoration: none;
+  color: white;
+}
+
+.p-4 div h6 {
+  font-size: xx-large;
 }
