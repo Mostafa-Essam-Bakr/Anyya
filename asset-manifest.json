@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Anyya/static/css/main.cccd1e22.css",
-    "main.js": "/Anyya/static/js/main.bcf100be.js",
-    "static/js/453.980ffa4e.chunk.js": "/Anyya/static/js/453.980ffa4e.chunk.js",
-    "static/media/1st.jpg": "/Anyya/static/media/1st.28572df2f88e3611e949.jpg",
-    "static/media/cover.jpg": "/Anyya/static/media/cover.37c14d6f274664604b1c.jpg",
-    "index.html": "/Anyya/index.html",
-    "main.cccd1e22.css.map": "/Anyya/static/css/main.cccd1e22.css.map",
-    "main.bcf100be.js.map": "/Anyya/static/js/main.bcf100be.js.map",
-    "453.980ffa4e.chunk.js.map": "/Anyya/static/js/453.980ffa4e.chunk.js.map"
+    "main.css": "/Anyaa-pro/static/css/main.01cbe05f.css",
+    "main.js": "/Anyaa-pro/static/js/main.0628b08f.js",
+    "static/js/453.980ffa4e.chunk.js": "/Anyaa-pro/static/js/453.980ffa4e.chunk.js",
+    "static/media/cover22.jpg": "/Anyaa-pro/static/media/cover22.2c5f8546fba67b5835b1.jpg",
+    "static/media/1st.jpg": "/Anyaa-pro/static/media/1st.28572df2f88e3611e949.jpg",
+    "static/media/cover.jpg": "/Anyaa-pro/static/media/cover.37c14d6f274664604b1c.jpg",
+    "index.html": "/Anyaa-pro/index.html",
+    "main.01cbe05f.css.map": "/Anyaa-pro/static/css/main.01cbe05f.css.map",
+    "main.0628b08f.js.map": "/Anyaa-pro/static/js/main.0628b08f.js.map",
+    "453.980ffa4e.chunk.js.map": "/Anyaa-pro/static/js/453.980ffa4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cccd1e22.css",
-    "static/js/main.bcf100be.js"
+    "static/css/main.01cbe05f.css",
+    "static/js/main.0628b08f.js"
   ]
 }
