@@ -14,14 +14,6 @@ export default function Ai() {
   }, []);
   return (
     <div className="parentaichat" data-aos="fade-right">
-      <Link to="/" data-aos="fade-right">
-        {" "}
-        <IoMdArrowRoundBack className="back" />
-      </Link>
-      <Link to="/Payment" className="sub">
-        ابتكار
-      </Link>
-      <Outlet />
       <Iframe
         src="https://udify.app/chatbot/kmgzyPCOfhZYQee3"
         style="width: 100%; height: 100%; min-height: 700px"

@@ -1,47 +1,58 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Link, Outlet } from "react-router-dom";
-import { IoMdArrowRoundBack } from "react-icons/io";
 
-export default function Login() {
+// Login component
+export default function Login({ onNameSubmit }) {
+  const [name, setName] = useState("");
+  const [accept, setAccept] = useState(false);
+  const navigate = useNavigate();
   const [email, SetEmail] = useState("");
   const [password, SetPssword] = useState("");
-  const [accept, SetAccept] = useState(false);
-  const [EmailErr, SetEmailerr] = useState("");
-
-  async function Submit(e) {
-    let flag = true;
+  async function handleSubmit(e) {
     e.preventDefault();
-    SetAccept(true);
-    if (password.length <= 8) {
-      flag = false;
-    } else flag = true;
+    setAccept(true);
 
-    window.location.pathname = "/Start";
+    if (name.length > 10 && password.length > 8) {
+      if (email === "Mesharifaleh@gmail.com" && password === "00123456789") {
+        // إذا كان البريد الإلكتروني يساوي "MMMMMMMMM"، افتح صفحة أخرى
+        window.location.pathname = "/Setting";
+      } else {
+        // تخزين الاسم في Local Storage
+        localStorage.setItem("userName", name);
+        window.location.pathname = "/Homechild";
+      }
+    }
   }
+
   return (
     <div className="login">
-      <Link to="/" data-aos="fade-right">
-        {" "}
-        <IoMdArrowRoundBack className="back" />
-      </Link>
-      <Link to="/Payment" className="sub">
-        ابتكار
-      </Link>
-      <Outlet />
+      <form className="frm1" onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder=" your Name please"
+          id="name"
+          value={name}
+          required
+          onChange={(e) => setName(e.target.value)}
+        />
 
-      <form className="frm1" onSubmit={Submit}>
+        {name.length <= 10 && accept && (
+          <p className="error">name more than 8 char</p>
+        )}
+
         <label htmlFor="email"> Email</label>
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder=" your Name please"
           id="email"
           value={email}
           required
           onChange={(e) => SetEmail(e.target.value)}
         />
-        {accept && EmailErr === 401 && <p>email is not corect</p>}
 
         <label htmlFor="password"> Pass word</label>
         <input
@@ -55,11 +66,13 @@ export default function Login() {
         {password.length <= 8 && accept && (
           <p className="error">password motr than 8 char</p>
         )}
-
-        <Link to="/Start">
-          <button type="submit">Login</button>
-        </Link>
+        <button type="submit">Login </button>
       </form>
     </div>
   );
+}
+
+// مكون آخر يستقبل قيمة الاسم
+export function Greeting({ name }) {
+  return <div>مرحبا، {name}!</div>;
 }

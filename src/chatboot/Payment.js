@@ -1,4 +1,6 @@
 import React from "react";
+import { IoPlayBackOutline } from "react-icons/io5";
+
 import {
   MDBBtn,
   MDBCard,
@@ -13,6 +15,12 @@ import { Link } from "react-router-dom";
 export default function Payment() {
   return (
     <div className="payment">
+      <nav className="nav1">
+        <Link to="/"> تخطي</Link>
+        <Link to="/">
+          <IoPlayBackOutline />
+        </Link>
+      </nav>
       <MDBContainer
         className="py-5"
         fluid

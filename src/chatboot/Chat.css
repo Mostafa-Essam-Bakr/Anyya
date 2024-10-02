@@ -1,9 +1,9 @@
 .aiframe {
   width: 100%;
-  height: 94%;
-  position: fixed;
+  position: relative;
   background-color: white;
   bottom: 0px;
+  height: 100%;
 }
 
 .py-3 {
@@ -106,6 +106,20 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+}
+.logouticon {
+  background: none;
+  position: absolute;
+  left: -10px;
+}
+.logouticon:hover {
+  background: none;
+}
+.logouticon svg {
+  font-size: xx-large;
+}
+.error {
+  color: red;
 }
 .pbtnai svg {
   overflow: hidden;
@@ -230,6 +244,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .btn1 {
   display: flex;
@@ -241,14 +256,17 @@
   font-size: xx-large;
   border: 1px solid rgb(55, 0, 255);
   border-radius: 50px;
-  background-color: rgb(0, 68, 255);
+  background-color: rgb(44, 44, 44);
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.3s;
   left: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .btn1:hover {
-  background: none;
+  background-color: #5c5c5c;
   color: rgb(255, 255, 255);
   left: 20px;
 }
@@ -295,36 +313,22 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  position: absolute;
-  animation-name: move;
-  animation-timing-function: linear;
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-}
-@keyframes move {
-  from {
-    left: 1500px;
-  }
-  to {
-    left: 0px;
-  }
+  position: relative;
 }
 .frm1 {
   position: relative;
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #1c64f2;
-  border-radius: 10px 10px;
+  background-color: #000000;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 58px;
+  gap: 20px;
   justify-content: center;
 }
 .frm1 input {
   width: 87%;
-  height: 52px;
+  height: 62px;
   border-radius: 20px;
   border: none;
 }
@@ -342,7 +346,11 @@
   width: 100px;
   height: 40px;
   border-radius: 10px 10px;
-  background-image: linear-gradient(to right, blue, rgb(142, 142, 236));
+  background-image: linear-gradient(
+    to right,
+    rgb(68, 68, 68),
+    rgb(168, 168, 168)
+  );
   font-family: fantasy;
   font-size: larger;
   border: none;
@@ -356,7 +364,7 @@
   filter: brightness(0.5);
 }
 .payment {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   background: aliceblue;
@@ -368,7 +376,7 @@
   position: relative;
   align-items: center;
   gap: 13px;
-  background: white;
+  background: rgb(3, 3, 3);
 }
 
 .p-4 div {
@@ -380,10 +388,13 @@
   align-items: center;
   width: 100%;
 }
+.p-4 p {
+  color: white;
+}
 
 .p-4 div input {
   width: 94%;
-  height: 30px;
+  height: 60px;
   border-radius: 10px;
   border: none;
   background-color: #c8d7e9;
@@ -392,16 +403,18 @@
 .p-4 div label {
   font-size: xx-large;
   font-family: unset;
+  color: white;
 }
 .p-4 button {
   width: 50%;
-  height: 30px;
+  height: 60px;
   border: solid 1px;
   border-radius: 10px;
-  background-color: blue;
+  background-color: rgb(103, 103, 104);
   color: white;
   font-size: large;
   cursor: pointer;
+  margin-bottom: 25%;
 }
 .p-4 button a {
   text-decoration: none;
@@ -410,4 +423,152 @@
 
 .p-4 div h6 {
   font-size: xx-large;
+  color: white;
+}
+.parentsub {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.nav1 {
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  position: absolute;
+  height: 54px;
+  background-color: #616163;
+  border-radius: 20px 0px 0px 20px;
+}
+.nav1 a {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  top: 11px;
+  z-index: 26;
+  right: 13px;
+}
+
+.parentsubch {
+  width: 100%;
+  height: 77%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.parentsubch h1 {
+  color: white;
+}
+
+.parentsubch a {
+  text-decoration: none;
+  color: white;
+  width: 86px;
+  height: 48px;
+  background-color: #616163;
+  text-align: center;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.parentsubch a:hover {
+  background-color: #727272;
+}
+.parentsubch div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav1 svg {
+  position: absolute;
+  right: 380px;
+  top: 4px;
+  font-size: x-large;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0, 0, 0);
+}
+.aiframe .p-6 {
+  padding: 1.5rem;
+  background-color: aquamarine !important;
+}
+
+.flex .p-6 {
+  background-color: #ef14ff;
+}
+.p-6 {
+  padding: 1.5rem;
+  background-color: rgb(0, 0, 0);
+}
+.px-4 {
+  background-color: rgb(0, 0, 0) !important;
+}
+.Chatapi {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.chat-container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f8d7da;
+  align-self: flex-start;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
