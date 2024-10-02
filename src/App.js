@@ -17,7 +17,7 @@ import Setting from "./Setting";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />}>
             {" "}
@@ -31,7 +31,7 @@ function App() {
             <Route path="/Setting" element={<Setting />} />{" "}
           </Route>
         </Routes>{" "}
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
